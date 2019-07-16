@@ -1,0 +1,262 @@
+body {
+    font-weight: 400;
+    color: black;
+}
+
+.text-h {
+    font-size: 24px;
+}
+
+.img-user {
+    width: 70px;
+    height: 70px;
+    margin-left: 13px;
+}
+
+.form_action {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.h-text {
+    font-size: 18px;
+}
+
+.centr {
+    padding-left: 98px;
+}
+
+.card {
+    height: 100px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.card-title {
+    color:white;
+    text-align: center;
+}
+
+.header {
+    background: url('https://promtechautomat.ru/img/bg.jpg');
+    height: 150px;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.contact {
+    padding-top: 15px;
+}
+
+.tel-header a {
+    font-size: 24px;
+    font-weight: 700;
+    color:black;
+    line-height: 25px;
+}
+
+.email-header, .email-header a {
+    font-size: 20px;
+    color:black;
+    line-height: 25px;
+}
+
+.adress {
+    padding-top: 15px;
+}
+
+.adress-header {
+    font-size: 20px;
+    font-weight: 400;
+    color:black;
+    line-height: 25px;
+}
+
+.logo {
+    margin: 15px;
+}
+
+.sender {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.signup {
+    padding: 50px 10px;
+}
+
+.add_dogovor {
+    padding: 20px;
+}
+
+.add_worker {
+    padding: 20px;
+}
+
+.lich_data {
+    padding: 10px;
+    padding-top: 20px;
+    border: 2px solid #390e7e;
+    border-radius: 20px;
+    height: auto;
+}
+
+.form-inline label {
+    padding-right: 5px;
+}
+
+.border {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: #b7b7b9;
+}
+
+.no_decor {
+    text-decoration: none!important;
+    color: white;
+}
+
+.marg {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 2px;
+}
+
+.hr {
+    border: 1px solid white;
+}
+
+.form-inline {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid rgb(38, 224, 14);
+    border-radius: 25px;
+    padding-left: 25px;
+}
+
+.form_sign {
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 700;
+    background: #8b8ea3;
+    border: 2px solid rgb(28, 14, 224);
+    border-radius: 20px;
+}
+
+.nav-menu {
+    background: #3477c0;
+    margin: 0 auto;
+    width: 100%;
+    color:white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:white;
+}
+
+.footer {
+    padding: 50px 20px;
+}
+
+.error-text {
+    color:red;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.time_text {
+    font-size: 24px;
+    color: white;
+}
+
+.table {
+    color: black;
+    background: #ffffff;
+    border: 1px solid #390e7e;
+    text-align: center;
+    height: auto;
+    padding-top: 0px;
+}
+
+.table th {
+    text-align: center;
+    background: #809280;
+}
+
+#map {
+    height: 250px;
+    width: 25%;
+}
+
+.btn-center {
+    margin-left: 220px;
+    padding: 10px 50px;
+}
+
+.navbar-dark, .navbar {
+    background: #000000;
+}
+
+.nav-item {
+    width: 190px;
+    color: white;
+}
+
+.form_task {
+    padding: 20px 20px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.name_task {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.table-tr {
+    padding: 0px;
+    font-size: 13px;
+    width: 100%;
+    text-align: start;
+}
+
+.form-td {
+    font-size: 10px;
+    letter-spacing: 0.75em;
+    line-height: 5px;
+}
+
+.groups {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.modal-fix {
+    width: 970px !important;
+}
+
+.text-success {
+    color: red;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form_spec {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.input_spec {
+    width: 60% !important;
+    margin: 5px;
+}
