@@ -14,7 +14,7 @@
 						$this->form_validation->set_rules('login','password','required');
 						$this->form_validation->set_message('required','Поля %з не заполнены');
 
-					$data['worker'] = $this->worker->vxod_worker($_POST['login'],password_verify($_POST['password'],PASSWORD_DEFAULT));
+					$data['worker'] = $this->worker->vxod_worker($_POST['login'],$_POST['password']);
 
 					if (!empty($data['worker'])) {
 							$worker = array (
@@ -70,7 +70,10 @@
 							
 						} else {
 
-							$data['worker_result'] = $this->worker->result_works(date('2019-05-01'),date('2019-06-30'));
+							$data['worker_result'] = $this->worker->result_works(
+								date('Y-m-d', strtotime('2019-05-01')),
+								date('Y-m-d', strtotime('2019-06-30'))
+							);
 						}
 
 						$this->load->view('headeruser');
