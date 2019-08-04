@@ -4,7 +4,7 @@
 
         public function vxod_worker($login,$password) { /* Авторизация */
 
-            $sql = 'select id_worker,login,password from worker where login=? and password=?';
+            $sql = 'select id_worker,login,password from worker where login=? and password='.password_verify($password,PASSWORD_DEFAULT);
             $query = $this->db->query ($sql, array($login,$password));
             return $query->row();
 
@@ -77,10 +77,18 @@
 
         }
 
-        public function result_works($date1,$date2) {
+        /**
+         * @param DateTime $date1 Start of interval date
+         * @param DateTime $date2 End of interval date
+         *
+         * @return array
+         */
+        public function result_works($date1,$date2)
+        {
+            $sql = 'SELECT * FROM naryad n INNER JOIN worker w ON n.id_worker=w.id_worker INNER JOIN task t ON n.n_task=t.n_task INNER JOIN special s ON w.n_spec = s.n_spec WHERE w.date_received <= ? AND n.date_bnar >= ? AND (w.date_dismissal >= ? OR w.date_dismissal IS NULL) AND n.date_endnar <= ?';
 
-            $sql = 'select * from naryad left join worker on naryad.id_worker=worker.id_worker join task on naryad.n_task=task.n_task where '.start_date($date1).'>=date_bnar and '.end_date($date2).'<=date_endnar';
-            $query = $this->db->query($sql, array($date1,$date2));
+            $query = $this->db->query($sql, array($date1, $date1, $date2, $date2));
+
             return $query->result_array();
         }
 
